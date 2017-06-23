@@ -1,17 +1,17 @@
 <h1>Login</h1>
 <form #loginForm="ngForm">
   <div class="row">
-    <div class="col-xs-12">
+    <div class="col-xs-12 form-group">
       <div> {{ (user | async)?.uid }} </div>
       <input class="form-control" placeholder="Email" type="Email">
     </div>
-    <div class="col-xs-12">
+    <div class="col-xs-12 from-group">
       <input class="form-control" placeholder="Password" type="Password">
     </div>
-    <div class="col-xs-12">
-      <button class="btn" disabled>Login</button>
+    <div class="col-xs-12 form-group">
+      <button class="btn btn-primary">Login</button>
     </div>
-    <div class="col-xs-12">
+    <div class="col-xs-12 form-group">
       <button (click)=login() class="btn btn-danger" type="submit">Login with Google</button>
     </div>
   </div>

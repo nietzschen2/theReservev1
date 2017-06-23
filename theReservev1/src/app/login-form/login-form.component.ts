@@ -8,6 +8,7 @@ import * as firebase from 'firebase/app';
   templateUrl: './login-form.component.html',
   styleUrls: ['./login-form.component.scss']
 })
+
 export class LoginFormComponent implements OnInit {
 
   user: Observable<firebase.User>;
@@ -20,8 +21,7 @@ export class LoginFormComponent implements OnInit {
     this.afAuth.auth.signInWithPopup(new firebase.auth.GoogleAuthProvider());
   }
 
-
   ngOnInit() {
   }
 
-}
+  }
